@@ -369,9 +369,9 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
 
  if (window.innerWidth < 450) {
     //------------ HOME SECTION ----------
-    gsap.from('.home__title', 1.5, {opacity: 0, x:-300, delay: 0.2});
-    gsap.from('.home__description', 1.5, {opacity: 0, x:-200, delay: 0.3});
-    gsap.from('.home__img', 1.5, {opacity: 0, x:150, delay: 0.4});
+    gsap.from('.home__title', 1.5, {opacity: 0, x:-30, delay: 0.2});
+    gsap.from('.home__description', 1.5, {opacity: 0, x:-40, delay: 0.3});
+    gsap.from('.home__img', 1.5, {opacity: 0, x:30, delay: 0.4});
     
     
     //====================== GSAP SCroll-animations ==================================
@@ -386,7 +386,7 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
                 start: "top 90%", 
                 end: "top 10%", 
             },
-            x: 100, 
+            x: 30, 
             opacity: 0, 
             duration: 1 
         });
@@ -397,7 +397,7 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
                 start: "top 90%", 
                 end: "top 10%", 
             },
-            x: -200, 
+            x: -20, 
             opacity: 0, 
             duration: 1 
         });
@@ -441,7 +441,7 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
                 start: "top 90%", 
                 end: "top 10%", 
             },
-            x: 200, 
+            x: 30, 
             opacity: 0, 
             duration: 1 
         });
@@ -452,7 +452,7 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
                 start: "top 90%", 
                 end: "top 90%", 
             },
-            x: 200, 
+            x: 30, 
             opacity: 0, 
             duration: 1.3 
         });
@@ -463,7 +463,7 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
                 start: "top 90%", 
                 end: "top 10%", 
             },
-            x: 200, 
+            x: 30, 
             opacity: 0, 
             duration: 1.6 
         });
@@ -480,7 +480,7 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
                 start: "top 90%", 
                 end: "top 10%", 
             },
-            x: 100, 
+            x: 30, 
             opacity: 0, 
             duration: 1.3 
         });
@@ -502,7 +502,7 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
                 start: "top 90%", 
                 end: "top 10%", 
             },
-            x: -200, 
+            x: -30, 
             opacity: 0, 
             duration: 1.5 
         });
@@ -519,7 +519,7 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
                 start: "top 90%", 
                 end: "top 10%", 
             },
-            x: -50, 
+            x: -30, 
             opacity: 0, 
             duration: 1 
         });
@@ -530,7 +530,7 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
                 start: "top 90%", 
                 end: "top 10%", 
             },
-            x: -200, 
+            x: -20, 
             opacity: 0, 
             duration: 1.4 
         });
@@ -541,7 +541,57 @@ if (window.innerWidth < 576 && window.innerWidth > 450) {
                 start: "top 90%", 
                 end: "top 10%", 
             },
-            x: 100, 
+            x: 30, 
+            opacity: 0, 
+            duration: 1.6 
+        });
+    });
+
+
+//------------ FOOTER SECTION  ----------------------
+    document.addEventListener("DOMContentLoaded", function() {
+        gsap.registerPlugin(ScrollTrigger);
+    
+        gsap.from(".footer__logo", {
+            scrollTrigger: {
+                trigger: ".contact__title", 
+                start: "top 90%", 
+                end: "top 10%", 
+            },
+            x: -20, 
+            opacity: 0, 
+            duration: 1 
+        });
+    
+        gsap.from(".footer__description", {
+            scrollTrigger: {
+                trigger: ".contact__description", 
+                start: "top 90%", 
+                end: "top 10%", 
+            },
+            x: -30, 
+            opacity: 0, 
+            duration: 1.4 
+        });
+    
+        gsap.from(".footer__title", {
+            scrollTrigger: {
+                trigger: ".footer__title", 
+                start: "top 90%", 
+                end: "top 10%", 
+            },
+            x: 30, 
+            opacity: 0, 
+            duration: 1.5 
+        });
+
+        gsap.from(".footer__link", {
+            scrollTrigger: {
+                trigger: ".footer__link", 
+                start: "top 90%", 
+                end: "top 10%", 
+            },
+            x: 20, 
             opacity: 0, 
             duration: 1.6 
         });
